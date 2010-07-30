@@ -9,7 +9,6 @@
 (load "nebirhos/theme")
 
 
-(vendor 'rinari)
 (vendor 'magit)
 (vendor 'textmate)
-(textmate-mode)
+(textmate-mode)(load "nebirhos/ruby")
