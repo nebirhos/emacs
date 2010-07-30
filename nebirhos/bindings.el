@@ -6,7 +6,6 @@
 (global-set-key "\C-R" 'query-replace-regexp)
 (global-set-key "\C-L" 'goto-line)
 
-
 ;; Ctrl+Tab to switch buffer, F6 for terminals
 (cond
  ((window-system)
@@ -17,5 +16,10 @@
   (global-set-key [f6]   'bury-buffer)
   (global-set-key [(shift f6)] 'unbury-buffer)))
 
-;; Magit
-(global-set-key "\C-xg" 'magit-status)
+
+(global-set-key [f3] 'isearch-repeat-forward)
+(global-set-key [(shift f3)] 'isearch-repeat-backward)
+
+;; Some other useful keybinds & tricks
+(vendor 'textmate)
+(textmate-mode)

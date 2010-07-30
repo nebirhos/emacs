@@ -7,8 +7,4 @@
 (load "nebirhos/snippets")
 (load "nebirhos/bindings")
 (load "nebirhos/theme")
-
-
-(vendor 'magit)
-(vendor 'textmate)
-(textmate-mode)(load "nebirhos/ruby")
+(load "nebirhos/ruby")
