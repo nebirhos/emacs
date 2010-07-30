@@ -1,3 +1,9 @@
+;; What system is being used?
+(setq is-*nix (if (string-match "linux" (symbol-name system-type)) t))
+(setq is-windows (if (string-match "windows" (symbol-name system-type)) t))
+(setq is-mac (if (string-match "darwin" (symbol-name system-type)) t))
+
+
 ;; Formatting
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
