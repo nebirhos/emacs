@@ -1,8 +1,6 @@
     (defun kts (emacs config)
-      "chris wanstrath // chris@ozmm.org"
+      "nebirhos // nebirhos@aol.com"
   
-      (git-clone "git://github.com/defunkt/emacs.git")
+      (git-clone "git://github.com/nebirhos/emacs.git")
       (ruby "emacs/install.rb")
-      (find-file "emacs/local.el")
-      (insert '(load "defunkt"))
       (save-buffer))
