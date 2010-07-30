@@ -4,3 +4,4 @@ url/*
 local.el
 *.elc
 private.el
+auto-save-list
