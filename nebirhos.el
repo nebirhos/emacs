@@ -8,3 +8,4 @@
 (load "nebirhos/bindings")
 (load "nebirhos/theme")
 (load "nebirhos/ruby")
+(load "nebirhos/javascript")
