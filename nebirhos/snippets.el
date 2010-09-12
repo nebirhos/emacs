@@ -1,5 +1,9 @@
 (vendor 'yasnippet)
 (yas/initialize)
 
-(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
-(yas/load-directory "~/.emacs.d/nebirhos/snippets")
+;; New snippets are stored in the first directory
+(setq yas/root-directory '("~/.emacs.d/nebirhos/snippets"
+                           "~/.emacs.d/vendor/yasnippet/snippets"))
+
+;; Map `yas/load-directory' to every element
+(mapc 'yas/load-directory yas/root-directory)
