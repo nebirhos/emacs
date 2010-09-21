@@ -31,3 +31,6 @@
 [submodule "vendor/yasnippet"]
 	path = vendor/yasnippet
 	url = git://github.com/crazycode/yasnippet.git
+[submodule "vendor/php-mode"]
+	path = vendor/php-mode
+	url = git://github.com/emacsmirror/php-mode.git

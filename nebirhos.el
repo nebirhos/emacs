@@ -9,3 +9,5 @@
 (load "nebirhos/theme")
 (load "nebirhos/ruby")
 (load "nebirhos/javascript")
+
+(vendor 'php-mode)
