@@ -20,6 +20,4 @@
 (global-set-key [f3] 'isearch-repeat-forward)
 (global-set-key [(shift f3)] 'isearch-repeat-backward)
 
-;; Some other useful keybinds & tricks
-(vendor 'textmate)
-(textmate-mode)
+(global-set-key "\C-x\C-k" 'kill-all-buffers)

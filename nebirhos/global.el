@@ -44,3 +44,15 @@
   (server-start) )
 ;; Does not popup the annoying message when killing a client buffer
 (remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
+
+
+;; Some other useful tricks
+;; InteractivelyDoThings
+(require 'ido)
+(ido-mode t)
+(setq ido-enable-flex-matching t) ;; enable fuzzy matching
+
+;; TextMate mode only for mac
+(vendor 'textmate)
+(if is-mac
+    (textmate-mode))
