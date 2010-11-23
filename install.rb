@@ -27,3 +27,4 @@ end
 
 `git submodule update --init`
 `cd vendor/rinari && git submodule update --init`
+`emacs --batch --eval '(byte-compile-file "~/.emacs.d/vendor/js2.el")'`
