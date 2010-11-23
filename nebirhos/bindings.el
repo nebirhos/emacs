@@ -21,3 +21,5 @@
 (global-set-key [(shift f3)] 'isearch-repeat-backward)
 
 (global-set-key "\C-x\C-k" 'kill-all-buffers)
+
+(global-set-key [f5] 'compile)

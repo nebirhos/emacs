@@ -11,5 +11,6 @@
 (load "nebirhos/ruby")
 (load "nebirhos/javascript")
 (load "nebirhos/yaml")
+(load "nebirhos/java")
 
 (vendor 'php-mode)
