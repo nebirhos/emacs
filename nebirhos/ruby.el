@@ -35,3 +35,6 @@
 (setq auto-mode-alist (cons '("\\.god" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.ru" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.gemspec" . ruby-mode) auto-mode-alist))
+
+; rdoc
+(vendor 'rdoc-mode)
