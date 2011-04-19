@@ -1,9 +1,6 @@
 [submodule "rinari"]
 	path = vendor/rinari
 	url = git://github.com/eschulte/rinari.git
-[submodule "markdown-mode"]
-	path = vendor/markdown-mode
-	url = git://github.com/defunkt/markdown-mode.git
 [submodule "twilight-emacs"]
 	path = vendor/twilight-emacs
 	url = git://github.com/crafterm/twilight-emacs.git
@@ -28,6 +25,9 @@
 [submodule "vendor/ooc-mode"]
 	path = vendor/ooc-mode
 	url = git://github.com/tatofoo/ooc-mode.git
+[submodule "vendor/markdown-mode"]
+	path = vendor/markdown-mode
+	url = git://github.com/defunkt/markdown-mode.git
 [submodule "vendor/yasnippet"]
 	path = vendor/yasnippet
 	url = git://github.com/crazycode/yasnippet.git

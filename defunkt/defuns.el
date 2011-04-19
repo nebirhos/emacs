@@ -1,3 +1,13 @@
+(defun air ()
+  (interactive)
+  (replace-string "240" "180")
+  (save-buffer))
+
+(defun big ()
+  (interactive)
+  (replace-string "180" "240")
+  (save-buffer))
+
 (defun insert-soft-tab ()
   (interactive)
   (insert "  "))
@@ -55,8 +65,8 @@ This emulates Vim's `dt` behavior, which rocks."
 (defun defunkt-ido-find-project ()
   (interactive)
   (find-file
-   (concat "~/Projects/" (ido-completing-read "Project: "
-                           (directory-files "~/Projects/" nil "^[^.]")))))
+   (concat "~/Code/" (ido-completing-read "Project: "
+                           (directory-files "~/Code/" nil "^[^.]")))))
 
 (defun defunkt-goto-config ()
   (interactive)
