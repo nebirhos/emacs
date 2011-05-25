@@ -37,3 +37,6 @@
 [submodule "nebirhos/snippets/latex-mode"]
 	path = nebirhos/snippets/latex-mode
 	url = git@github.com:nebirhos/yasnippets-latex.git
+[submodule "vendor/color-theme-zenburn"]
+	path = vendor/color-theme-zenburn
+	url = git://github.com/credmp/color-theme-zenburn.git
