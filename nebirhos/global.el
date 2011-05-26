@@ -17,7 +17,6 @@
 
 ;; Emacs (G)UI
 (setq inhibit-startup-message t)
-(setq inhibit-startup-message t)
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))        ; No scroll bar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))            ; No tool bar
 (set-default 'cursor-type 'bar)                             ; Bar Cursor
@@ -25,6 +24,7 @@
 ;; Emacs Terminal
 (if (not window-system)
   (if (fboundp 'menu-bar-mode) (menu-bar-mode -1)) )
+
 
 ;; Caption is pathname/temp buffer name
 (setq frame-title-format
@@ -39,11 +39,12 @@
 ;; Ask for 'y' or 'n', not 'yes' or 'no
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; Run a single instance of emacs, which accepts all 'open file' requests
-(if window-system
-  (server-start) )
-;; Does not popup the annoying message when killing a client buffer
-(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
+;; Increase kill ring and history size
+(setq kill-ring-max 100)
+(setq query-replace-history-max 50)
+(setq replace-string-history-max 50)
+(setq replace-regex-history-max 50)
+(setq find-file-history-max 1000)
 
 
 ;; Some other useful tricks

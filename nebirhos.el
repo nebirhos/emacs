@@ -8,6 +8,8 @@
 (load "nebirhos/snippets")
 (load "nebirhos/bindings")
 (load "nebirhos/theme")
+(load "nebirhos/emacsclient")
+; modes
 (load "nebirhos/ruby")
 (load "nebirhos/javascript")
 (load "nebirhos/yaml")
