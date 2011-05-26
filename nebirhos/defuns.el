@@ -14,3 +14,10 @@
                                 (directory-files "~/.emacs.d/nebirhos/"
                                                  nil
                                                  "^[^.]")))))
+
+(defun nebirhos-ido-find-project ()
+  "open folder in ~/Projects"
+  (interactive)
+  (find-file
+   (concat "~/Projects/" (ido-completing-read "Project: "
+                           (directory-files "~/Projects/" nil "^[^.]")))))
