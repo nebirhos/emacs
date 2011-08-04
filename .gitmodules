@@ -40,3 +40,6 @@
 [submodule "vendor/color-theme-zenburn"]
 	path = vendor/color-theme-zenburn
 	url = git://github.com/credmp/color-theme-zenburn.git
+[submodule "vendor/cucumber"]
+	path = vendor/cucumber
+	url = https://github.com/michaelklishin/cucumber.el.git

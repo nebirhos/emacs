@@ -16,3 +16,4 @@
 (load "nebirhos/java")
 (load "nebirhos/php")
 (load "nebirhos/cc")
+(load "nebirhos/cucumber")
