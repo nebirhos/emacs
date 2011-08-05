@@ -26,4 +26,4 @@ Git = V do |command, dir|
 end
 
 `git submodule update --init --recursive`
-`emacs --batch --eval '(byte-compile-file "~/.emacs.d/vendor/js2.el")'`
+`emacs --batch --eval '(byte-compile-file "~/.emacs.d/vendor/js2-mode/js2-mode.el")'`

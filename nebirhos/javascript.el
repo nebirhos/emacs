@@ -1,4 +1,4 @@
 ; js2
-(autoload 'js2-mode "js2" nil t)
+(vendor 'js2-mode)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.js.erb$" . js2-mode))

@@ -43,3 +43,6 @@
 [submodule "vendor/cucumber"]
 	path = vendor/cucumber
 	url = https://github.com/michaelklishin/cucumber.el.git
+[submodule "vendor/js2-mode"]
+	path = vendor/js2-mode
+	url = git://github.com/mooz/js2-mode.git
