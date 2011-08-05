@@ -46,3 +46,6 @@
 [submodule "vendor/js2-mode"]
 	path = vendor/js2-mode
 	url = git://github.com/mooz/js2-mode.git
+[submodule "vendor/js-yasnippets"]
+	path = vendor/js-yasnippets
+	url = git@github.com:nebirhos/js-yasnippets.git
