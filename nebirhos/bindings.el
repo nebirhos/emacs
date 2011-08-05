@@ -33,3 +33,7 @@
 (nebirhos-set-switch-buffer)
 
 (global-set-key "\C-xp" 'nebirhos-ido-find-project)
+
+;; imenu
+(global-set-key "\C-ci" 'ido-goto-symbol)
+(global-set-key [S-mouse-3] 'imenu)
