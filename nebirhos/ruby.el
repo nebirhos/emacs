@@ -14,14 +14,18 @@
             (define-key rinari-minor-mode-map (kbd "C-f C-n") 'rinari-find-configuration)
             (define-key rinari-minor-mode-map (kbd "C-f C-o") 'rinari-find-log)
             (define-key rinari-minor-mode-map (kbd "C-f C-p") 'rinari-find-public)
+            (define-key rinari-minor-mode-map (kbd "C-f C-r") 'rinari-find-rspec)
             (define-key rinari-minor-mode-map (kbd "C-f C-s") 'rinari-find-script)
             (define-key rinari-minor-mode-map (kbd "C-f C-t") 'rinari-find-test)
             (define-key rinari-minor-mode-map (kbd "C-f C-v") 'rinari-find-view)
             (define-key rinari-minor-mode-map (kbd "C-f C-w") 'rinari-find-worker)
-            (define-key rinari-minor-mode-map (kbd "C-f C-x") 'rinari-find-fixture)
+            (define-key rinari-minor-mode-map (kbd "C-f C-x") 'rinari-find-rspec-fixture)
             (define-key rinari-minor-mode-map (kbd "C-f C-y") 'rinari-find-stylesheet)
 
-            (define-key rinari-minor-mode-map (kbd "A-r") 'rinari-test)))
+            (define-key rinari-minor-mode-map (kbd "A-r") 'rinari-test)
+
+            (define-key rinari-minor-mode-map [f5] 'rinari-web-server-restart)
+            ))
 
 ; rhtml
 (setq auto-mode-alist (cons '("\\.html\\.erb" . nxml-mode) auto-mode-alist))
