@@ -36,7 +36,7 @@
 	url = git://github.com/emacsmirror/php-mode.git
 [submodule "nebirhos/snippets/latex-mode"]
 	path = nebirhos/snippets/latex-mode
-	url = git@github.com:nebirhos/yasnippets-latex.git
+	url = git://github.com/nebirhos/yasnippets-latex.git
 [submodule "vendor/color-theme-zenburn"]
 	path = vendor/color-theme-zenburn
 	url = git://github.com/credmp/color-theme-zenburn.git
@@ -48,4 +48,4 @@
 	url = git://github.com/mooz/js2-mode.git
 [submodule "vendor/js-yasnippets"]
 	path = vendor/js-yasnippets
-	url = git@github.com:nebirhos/js-yasnippets.git
+	url = git://github.com/nebirhos/js-yasnippets.git
