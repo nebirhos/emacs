@@ -16,14 +16,10 @@ Link = V do |target, new|
   FileUtils.ln_s Cwd[ target ], Home[ new ] rescue puts("~/#{new} exists.")
 end
 
+
 Link[ 'emacs.el', '.emacs' ]
 Link[ '.', '.emacs.d' ]
 
-Git = V do |command, dir|
-  Dir.chdir(dir) do
-    `git #{command}`
-  end
-end
-
-`git submodule update --init --recursive`
-`emacs --batch --eval '(byte-compile-file "~/.emacs.d/vendor/js2-mode/js2-mode.el")'`
+`cd #{Cwd[]} && git submodule update --init --recursive`
+`emacs --batch --eval '(byte-compile-file "#{Cwd[ 'vendor/js2-mode/js2-mode.el' ]}")'`
+`ruby #{Cwd[ 'vendor/js-yasnippets/install.rb' ]}`
