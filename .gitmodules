@@ -49,3 +49,6 @@
 [submodule "vendor/js-yasnippets"]
 	path = vendor/js-yasnippets
 	url = git://github.com/nebirhos/js-yasnippets.git
+[submodule "vendor/autopair"]
+	path = vendor/autopair
+	url = https://github.com/emacsmirror/autopair.git

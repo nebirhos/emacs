@@ -7,3 +7,7 @@
 
 ;; Map `yas/load-directory' to every element
 (mapc 'yas/load-directory yas/root-directory)
+
+;; autopair a-la textmate
+(vendor 'autopair)
+(autopair-global-mode) ;; enable autopair in all buffers
