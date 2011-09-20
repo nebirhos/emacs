@@ -17,3 +17,4 @@
 (load "nebirhos/php")
 (load "nebirhos/cc")
 (load "nebirhos/cucumber")
+(load "nebirhos/css")
