@@ -27,7 +27,7 @@
 	url = git://github.com/defunkt/markdown-mode.git
 [submodule "vendor/yasnippet"]
 	path = vendor/yasnippet
-	url = git://github.com/crazycode/yasnippet.git
+	url = git://github.com/capitaomorte/yasnippet.git
 [submodule "vendor/php-mode"]
 	path = vendor/php-mode
 	url = git://github.com/emacsmirror/php-mode.git
