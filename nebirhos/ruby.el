@@ -27,9 +27,10 @@
             (define-key rinari-minor-mode-map [f5] 'rinari-web-server-restart)
             ))
 
-; rhtml
-(setq auto-mode-alist (cons '("\\.html\\.erb" . nxml-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.erb" . nxml-mode) auto-mode-alist))
+; erb views
+(setq auto-mode-alist (cons '("\\.erb$" . ruby-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.js.erb$" . js2-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.html.erb$" . nxml-mode) auto-mode-alist))
 
 ; ruby
 (vendor 'ruby-hacks)
