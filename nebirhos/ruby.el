@@ -44,3 +44,6 @@
 
 ; rdoc
 (vendor 'rdoc-mode)
+
+; rvm
+(vendor 'rvm)

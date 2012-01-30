@@ -52,3 +52,6 @@
 [submodule "vendor/android-mode"]
 	path = vendor/android-mode
 	url = https://github.com/remvee/android-mode.git
+[submodule "vendor/rvm.el"]
+	path = vendor/rvm.el
+	url = https://github.com/senny/rvm.el.git
