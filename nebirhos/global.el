@@ -57,3 +57,7 @@
 (vendor 'textmate)
 (if is-mac
     (textmate-mode))
+
+;; Compilation pref
+(setq compilation-ask-about-save nil)
+(setq compilation-read-command nil)     ; no prompt for compile command

@@ -22,9 +22,9 @@
             (define-key rinari-minor-mode-map (kbd "C-f C-x") 'rinari-find-rspec-fixture)
             (define-key rinari-minor-mode-map (kbd "C-f C-y") 'rinari-find-stylesheet)
 
-            (define-key rinari-minor-mode-map (kbd "A-r") 'rinari-test)
-
             (define-key rinari-minor-mode-map [f5] 'rinari-web-server-restart)
+            (define-key rinari-minor-mode-map (kbd "C-c C-c") 'rinari-web-server-restart)
+            (define-key rinari-minor-mode-map (kbd "C-c C-t") 'rinari-test)
             ))
 
 ; erb views
