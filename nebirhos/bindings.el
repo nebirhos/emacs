@@ -18,6 +18,7 @@
 
 (global-set-key "\C-x\C-k" 'kill-all-buffers)
 
+(global-set-key [f5] 'compile)
 (global-set-key "\C-c\C-c" 'compile)
 
 ;; Ctrl+Tab to switch buffer, F6 for terminals
