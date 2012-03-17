@@ -4,6 +4,9 @@
 try {
     $1
 }
+catch ($2) {
+    $3
+}
 finally {
     $0
 }

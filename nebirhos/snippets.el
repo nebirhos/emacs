@@ -1,5 +1,5 @@
 (vendor 'yasnippet)
-(yas/initialize)
+(yas/global-mode 1)
 
 ;; New snippets are stored in the first directory
 (setq yas/root-directory '("~/.emacs.d/nebirhos/snippets"
