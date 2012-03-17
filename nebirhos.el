@@ -19,3 +19,4 @@
 (load "nebirhos/cucumber")
 (load "nebirhos/css")
 (load "nebirhos/android")
+(load "nebirhos/markup-langs")
