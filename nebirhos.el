@@ -20,3 +20,4 @@
 (load "nebirhos/css")
 (load "nebirhos/android")
 (load "nebirhos/markup-langs")
+(load "nebirhos/speedbar")

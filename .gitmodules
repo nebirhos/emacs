@@ -58,3 +58,6 @@
 [submodule "vendor/coffee-mode"]
 	path = vendor/coffee-mode
 	url = https://github.com/defunkt/coffee-mode.git
+[submodule "vendor/sr-speedbar"]
+	path = vendor/sr-speedbar
+	url = git://github.com/emacsmirror/sr-speedbar.git
