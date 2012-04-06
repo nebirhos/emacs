@@ -21,6 +21,8 @@
 (global-set-key [f5] 'compile)
 (global-set-key "\C-c\C-c" 'compile)
 
+(global-set-key "\C-c\C-w" 'whitespace-cleanup)
+
 ;; Ctrl+Tab to switch buffer, F6 for terminals
 (defun nebirhos-set-switch-buffer()
   (cond
