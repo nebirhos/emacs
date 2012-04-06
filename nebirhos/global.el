@@ -61,3 +61,7 @@
 ;; Compilation pref
 (setq compilation-ask-about-save nil)
 (setq compilation-read-command nil)     ; no prompt for compile command
+
+;; Browser
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "google-chrome")
