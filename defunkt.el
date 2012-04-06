@@ -32,5 +32,6 @@
 (vendor 'ooc-mode)
 (vendor 'coffee-mode)
 (vendor 'lua-mode)
-
-(load "vendor/tpl-mode")
+(vendor 'any-ini-mode)
+(vendor 'mustache-mode)
+(vendor 'scss-mode)
