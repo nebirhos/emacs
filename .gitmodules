@@ -61,3 +61,9 @@
 [submodule "vendor/sr-speedbar"]
 	path = vendor/sr-speedbar
 	url = git://github.com/emacsmirror/sr-speedbar.git
+[submodule "vendor/sass-mode"]
+	path = vendor/sass-mode
+	url = git://github.com/nex3/sass-mode.git
+[submodule "vendor/haml-mode"]
+	path = vendor/haml-mode
+	url = git://github.com/nex3/haml-mode.git

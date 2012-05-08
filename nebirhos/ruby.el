@@ -31,6 +31,7 @@
 (setq auto-mode-alist (cons '("\\.erb$" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.js.erb$" . js2-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.html.erb$" . nxml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.css.erb$" . css-mode) auto-mode-alist))
 
 ; ruby
 (vendor 'ruby-hacks)
