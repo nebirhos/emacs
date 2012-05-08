@@ -67,3 +67,6 @@
 [submodule "vendor/haml-mode"]
 	path = vendor/haml-mode
 	url = git://github.com/nex3/haml-mode.git
+[submodule "vendor/color-theme-solarized"]
+	path = vendor/color-theme-solarized
+	url = git://github.com/sellout/emacs-color-theme-solarized.git
