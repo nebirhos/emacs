@@ -9,7 +9,10 @@
 (load "nebirhos/bindings")
 (load "nebirhos/theme")
 (load "nebirhos/emacsclient")
-; modes
+(load "nebirhos/speedbar")
+(load "nebirhos/compile")
+
+;; My modes
 (load "nebirhos/ruby")
 (load "nebirhos/javascript")
 (load "nebirhos/java")

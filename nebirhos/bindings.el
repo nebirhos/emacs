@@ -21,7 +21,7 @@
 (global-set-key [f5] 'compile)
 (global-set-key "\C-c\C-c" 'compile)
 
-(global-set-key "\C-c\C-w" 'whitespace-cleanup)
+(global-set-key "\C-cw" 'whitespace-cleanup)
 
 ;; Ctrl+Tab to switch buffer, F6 for terminals
 (defun nebirhos-set-switch-buffer()
@@ -36,6 +36,8 @@
 (nebirhos-set-switch-buffer)
 
 (global-set-key "\C-xp" 'nebirhos-ido-find-project)
+
+(global-set-key "\C-x\C-g" 'textmate-goto-file)
 
 ;; imenu
 (global-set-key "\C-ci" 'ido-goto-symbol)

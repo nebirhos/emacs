@@ -58,10 +58,15 @@
 (if is-mac
     (textmate-mode))
 
-;; Compilation pref
-(setq compilation-ask-about-save nil)
-(setq compilation-read-command nil)     ; no prompt for compile command
-
 ;; Browser
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome")
+
+;; Magit - Git control
+(vendor 'magit)
+(eval-after-load 'magit
+  '(progn
+     (set-face-background 'magit-item-highlight "black")
+     (set-face-foreground 'magit-diff-add "dark green")
+     (set-face-foreground 'magit-diff-del "dark red")))
+(global-set-key "\C-xg" 'magit-status)
