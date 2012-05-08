@@ -2,8 +2,9 @@
 (require 'color-theme)
 (setq color-theme-is-global t)
 
-(load-file "~/.emacs.d/vendor/twilight-emacs/color-theme-twilight.el")
-(load-file "~/.emacs.d/vendor/color-theme-zenburn/zenburn.el")
+;; (vendor 'color-theme-twilight)
+;; (vendor 'color-theme-solarized)
+(vendor 'color-theme-zenburn)
 
 (color-theme-zenburn)
 
@@ -12,7 +13,7 @@
   (if is-mac
       (set-default-font "-apple-inconsolata-medium-r-normal--16-160-72-72-m-160-iso10646-1") )
   (if is-*nix
-      (set-default-font "Inconsolata-dz-10.5") ))
+      (set-default-font "Inconsolata-dz-11") ))
 
 (when window-system
   (nebirhos-set-font))

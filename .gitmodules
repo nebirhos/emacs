@@ -31,9 +31,6 @@
 [submodule "nebirhos/snippets/latex-mode"]
 	path = nebirhos/snippets/latex-mode
 	url = git://github.com/nebirhos/yasnippets-latex.git
-[submodule "vendor/color-theme-zenburn"]
-	path = vendor/color-theme-zenburn
-	url = git://github.com/credmp/color-theme-zenburn.git
 [submodule "vendor/cucumber"]
 	path = vendor/cucumber
 	url = https://github.com/michaelklishin/cucumber.el.git
@@ -70,3 +67,6 @@
 [submodule "vendor/color-theme-twilight"]
 	path = vendor/color-theme-twilight
 	url = git://github.com/crafterm/twilight-emacs.git
+[submodule "vendor/color-theme-zenburn"]
+	path = vendor/color-theme-zenburn
+	url = git://github.com/bbatsov/zenburn-emacs.git
