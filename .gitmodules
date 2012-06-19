@@ -73,3 +73,6 @@
 [submodule "vendor/minimap"]
 	path = vendor/minimap
 	url = git://github.com/razik/emacs-minimap.git
+[submodule "vendor/color-theme-molokai"]
+	path = vendor/color-theme-molokai
+	url = git://github.com/alloy-d/color-theme-molokai.git

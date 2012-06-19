@@ -2,11 +2,13 @@
 (require 'color-theme)
 (setq color-theme-is-global t)
 
-;; (vendor 'color-theme-twilight)
-;; (vendor 'color-theme-solarized)
+(vendor 'color-theme-twilight)
+(vendor 'color-theme-solarized)
+(vendor 'color-theme-molokai)
 (vendor 'color-theme-zenburn)
 
 (color-theme-zenburn)
+;; (set-background-color "#222")
 
 ;; Font
 (defun nebirhos-set-font ()
@@ -17,3 +19,7 @@
 
 (when window-system
   (nebirhos-set-font))
+
+;; Linum
+(setq linum-format "%3d ")
+(global-linum-mode)
