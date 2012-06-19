@@ -11,6 +11,7 @@
 (load "nebirhos/emacsclient")
 (load "nebirhos/speedbar")
 (load "nebirhos/compile")
+(vendor 'minimap)
 
 ;; My modes
 (load "nebirhos/ruby")

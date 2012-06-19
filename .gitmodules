@@ -70,3 +70,6 @@
 [submodule "vendor/color-theme-zenburn"]
 	path = vendor/color-theme-zenburn
 	url = git://github.com/bbatsov/zenburn-emacs.git
+[submodule "vendor/minimap"]
+	path = vendor/minimap
+	url = git://github.com/razik/emacs-minimap.git
