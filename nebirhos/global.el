@@ -64,9 +64,9 @@
 
 ;; Magit - Git control
 (vendor 'magit)
-;; (eval-after-load 'magit
-;;   '(progn
-;;      (set-face-background 'magit-item-highlight "black")
-;;      (set-face-foreground 'magit-diff-add "dark green")
-;;      (set-face-foreground 'magit-diff-del "dark red")))
+(eval-after-load 'magit
+  '(progn
+     (set-face-background 'magit-item-highlight "black")
+     (set-face-foreground 'magit-diff-add "#06F906")
+     (set-face-foreground 'magit-diff-del "#D33A00")))
 (global-set-key "\C-xg" 'magit-status)
