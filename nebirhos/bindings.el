@@ -23,21 +23,17 @@
 
 (global-set-key "\C-cw" 'whitespace-cleanup)
 
-;; Ctrl+Tab to switch buffer, F6 for terminals
-(defun nebirhos-set-switch-buffer()
-  (cond
-   ((window-system)
-    (global-set-key (kbd "<C-tab>") 'bury-buffer)
-    (global-set-key (kbd "<C-S-iso-lefttab>") 'unbury-buffer)))
-  (cond
-   ((not window-system)
-    (global-set-key [f6]   'bury-buffer)
-    (global-set-key [(shift f6)] 'unbury-buffer)))  )
-(nebirhos-set-switch-buffer)
+;; Ctrl+Tab to switch buffer (F6 for terminals)
+(global-set-key (kbd "<C-tab>") 'bury-buffer)
+(global-set-key (kbd "<C-S-iso-lefttab>") 'unbury-buffer)
+(global-set-key [f6] 'bury-buffer)
+(global-set-key [(shift f6)] 'unbury-buffer)
 
-(global-set-key "\C-xp" 'nebirhos-ido-find-project)
-
+;; Other useful shortcuts
+(global-set-key "\C-x p" 'nebirhos-ido-find-project)
 (global-set-key "\C-x\C-g" 'textmate-goto-file)
+(global-set-key "\C-x r" 'rgrep)
+
 
 ;; imenu
 (global-set-key "\C-ci" 'ido-goto-symbol)

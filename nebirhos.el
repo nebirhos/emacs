@@ -4,13 +4,12 @@
 (load "defunkt/defuns")
 (load "nebirhos/defuns")
 (load "nebirhos/global")
+(load "nebirhos/ui")
 (load "nebirhos/files")
 (load "nebirhos/snippets")
-(load "nebirhos/bindings")
-(load "nebirhos/theme")
-(load "nebirhos/emacsclient")
 (load "nebirhos/speedbar")
 (load "nebirhos/compile")
+(load "nebirhos/bindings")
 (vendor 'minimap)
 
 ;; My modes
