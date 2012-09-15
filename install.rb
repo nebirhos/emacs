@@ -17,7 +17,6 @@ Link = V do |target, new|
 end
 
 
-Link[ 'emacs.el', '.emacs' ]
 Link[ '.', '.emacs.d' ]
 
 `cd #{Cwd[]} && git submodule update --init --recursive`
