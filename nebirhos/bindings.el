@@ -30,9 +30,17 @@
 (global-set-key [(shift f6)] 'unbury-buffer)
 
 ;; Other useful shortcuts
-(global-set-key "\C-x p" 'nebirhos-ido-find-project)
+(global-set-key "\C-xp" 'nebirhos-ido-find-project)
 (global-set-key "\C-x\C-g" 'textmate-goto-file)
-(global-set-key "\C-x r" 'rgrep)
+(global-set-key "\C-xr" 'rgrep)
+(global-set-key "\C-xk" 'kill-this-buffer) ; don't ask, just kill
+
+;; Window resize
+(global-set-key (kbd "S-s-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-s-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-s-<down>") 'shrink-window)
+(global-set-key (kbd "S-s-<up>") 'enlarge-window)
+
 
 
 ;; imenu
