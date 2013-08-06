@@ -11,6 +11,9 @@
 (load "nebirhos/compile")
 (load "nebirhos/bindings")
 (vendor 'minimap)
+(vendor 'ace-jump-mode)
+;; (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+(define-key global-map (kbd "C-.") 'ace-jump-mode)
 
 ;; My modes
 (load "nebirhos/ruby")
