@@ -76,3 +76,6 @@
 [submodule "vendor/color-theme-molokai"]
 	path = vendor/color-theme-molokai
 	url = git://github.com/alloy-d/color-theme-molokai.git
+[submodule "vendor/undo-tree"]
+	path = vendor/undo-tree
+	url = https://github.com/emacsmirror/undo-tree.git

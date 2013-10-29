@@ -14,6 +14,8 @@
 (vendor 'ace-jump-mode)
 ;; (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (define-key global-map (kbd "C-.") 'ace-jump-mode)
+(vendor 'undo-tree)
+(global-undo-tree-mode)
 
 ;; My modes
 (load "nebirhos/ruby")
