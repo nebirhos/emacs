@@ -1,5 +1,10 @@
 (package-install-if-missing 'enh-ruby-mode)
 
+(package-install-if-missing 'ruby-tools)
+
+(package-install-if-missing 'ruby-hash-syntax)
+(global-set-key "\C-ch" 'ruby-toggle-hash-syntax)
+
 (package-install-if-missing 'highlight-indentation)
 (add-hook 'enh-ruby-mode-hook
 	  (lambda () (highlight-indentation-current-column-mode)))

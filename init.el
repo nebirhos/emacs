@@ -10,6 +10,7 @@
 (load "nebirhos/navigation")
 (load "nebirhos/undo")
 (load "nebirhos/speedbar")
+(load "nebirhos/magit")
 (load "nebirhos/bindings")
 
 ;; ;; My modes
