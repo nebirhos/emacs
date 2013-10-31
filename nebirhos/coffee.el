@@ -1,3 +1,6 @@
 ;; coffee script
-(vendor 'coffee-mode)
-(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(package-install-if-missing 'coffee-mode)
+
+(package-install-if-missing 'highlight-indentation)
+(add-hook 'coffee-mode-hook
+	  (lambda () (highlight-indentation-mode)))

@@ -13,7 +13,7 @@
 
 ;; Caption is pathname/temp buffer name
 (setq frame-title-format
- '(buffer-file-name "%f" (dired-directory dired-directory "%b")))
+      '(buffer-file-name "%f" (dired-directory dired-directory "%b")))
 
 ;; Don't wrap
 (set-default 'truncate-lines t)
@@ -31,23 +31,22 @@
 (if (fboundp 'fringe-mode) (fringe-mode 0))
 
 
+;; Highlight indentation
+(package-install-if-missing 'highlight-indentation)
+(set-face-background 'highlight-indentation-face "#292929")
+(set-face-background 'highlight-indentation-current-column-face "#333333")
+
 ;; Theme
-(require 'color-theme)
-(setq color-theme-is-global t)
-
-(vendor 'color-theme-twilight)
-(vendor 'color-theme-solarized)
-(vendor 'color-theme-molokai)
-(vendor 'color-theme-zenburn)
-
-(color-theme-molokai)
+(package-install-if-missing 'molokai-theme)
+(load-theme 'molokai t)
 
 ;; Font
 (defun nebirhos-set-font ()
-  (if is-mac
-      (set-default-font "-apple-inconsolata-medium-r-normal--16-160-72-72-m-160-iso10646-1") )
-  (if is-*nix
-      (set-default-font "Inconsolata-dz-11") ))
+  ;; (if is-mac
+  ;;     (set-default-font "-apple-inconsolata-medium-r-normal--16-160-72-72-m-160-iso10646-1") )
+  ;; (if is-*nix
+  ;;     (set-default-font "Inconsolata-dz-11") )
+  )
 
 ;; Emacsclient settings - grabbed from Prelude http://batsov.com/prelude/
 ;; Since emacs --daemon starts a terminal frame, we need to customize frames each time

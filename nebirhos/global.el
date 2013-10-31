@@ -23,27 +23,14 @@
 (setq replace-regex-history-max 50)
 (setq find-file-history-max 1000)
 
-
-;; Some other useful tricks
-;; InteractivelyDoThings
-(require 'ido)
+;; FLX IDO
+(package-install-if-missing 'flx-ido)
 (ido-mode t)
-(setq ido-enable-flex-matching t) ;; enable fuzzy matching
-
-;; TextMate mode only for mac
-(vendor 'textmate)
-(if is-mac
-    (textmate-mode))
+(ido-everywhere t)
+(flx-ido-mode t)
+;; disable ido faces to see flx highlights.
+(setq ido-use-faces nil)
 
 ;; Browser
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome")
-
-;; Magit - Git control
-(vendor 'magit)
-(eval-after-load 'magit
-  '(progn
-     (set-face-background 'magit-item-highlight "black")
-     (set-face-foreground 'magit-diff-add "#06F906")
-     (set-face-foreground 'magit-diff-del "#D33A00")))
-(global-set-key "\C-xg" 'magit-status)

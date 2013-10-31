@@ -1,5 +1,6 @@
-;; Copy & Paste
+;; Copy & Paste & other sane stuff
 (cua-mode t)
+
 ;; Rules for "copy&paste stacks": emacs kill ring, emacs region, X11 clipboard and X11 selection
 (setq mouse-drag-copy-region nil)     ; don't inject selection with mouse to the kill ring
 (setq x-select-enable-primary nil)    ; don't sync kill ring with primary X11 selection
@@ -10,18 +11,13 @@
 (setq yank-pop-change-selection t)    ; make rotating the kill ring change the X11 clipboard.
 
 
-(global-set-key "\C-R" 'query-replace-regexp)
 (global-set-key "\C-L" 'goto-line)
-
-(global-set-key [f3] 'isearch-repeat-forward)
-(global-set-key [(shift f3)] 'isearch-repeat-backward)
-
+(global-set-key "\C-xk" 'kill-this-buffer) ; don't ask, just kill
 (global-set-key "\C-x\C-k" 'kill-all-buffers)
 
-(global-set-key [f5] 'compile)
-(global-set-key "\C-c\C-c" 'compile)
-
 (global-set-key "\C-cw" 'whitespace-cleanup)
+(global-set-key "\C-xc" 'nebirhos-find-config)
+(global-set-key "\C-w" 'backward-kill-word)
 
 ;; Ctrl+Tab to switch buffer (F6 for terminals)
 (global-set-key (kbd "<C-tab>") 'bury-buffer)
@@ -29,11 +25,9 @@
 (global-set-key [f6] 'bury-buffer)
 (global-set-key [(shift f6)] 'unbury-buffer)
 
-;; Other useful shortcuts
-(global-set-key "\C-xp" 'nebirhos-ido-find-project)
-(global-set-key "\C-x\C-g" 'textmate-goto-file)
-(global-set-key "\C-xr" 'rgrep)
-(global-set-key "\C-xk" 'kill-this-buffer) ; don't ask, just kill
+;; Font size
+(define-key global-map (kbd "C-+") 'text-scale-increase)
+(define-key global-map (kbd "C--") 'text-scale-decrease)
 
 ;; Window resize
 (global-set-key (kbd "S-s-<left>") 'shrink-window-horizontally)
@@ -41,8 +35,5 @@
 (global-set-key (kbd "S-s-<down>") 'shrink-window)
 (global-set-key (kbd "S-s-<up>") 'enlarge-window)
 
-
-
-;; imenu
-(global-set-key "\C-ci" 'ido-goto-symbol)
-(global-set-key [S-mouse-3] 'imenu)
+;; Navigate between windows using Alt-left, Alt-up, Alt-right
+(windmove-default-keybindings 'meta)

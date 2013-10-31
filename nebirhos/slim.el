@@ -1,3 +1,6 @@
 ;; slim lang
-(vendor 'slim-mode)
-(add-to-list 'auto-mode-alist '("\\.slim$" . slim-mode))
+(package-install-if-missing 'slim-mode)
+
+(package-install-if-missing 'highlight-indentation)
+(add-hook 'slim-mode-hook
+	  (lambda () (highlight-indentation-mode)))

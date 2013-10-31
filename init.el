@@ -1,7 +1,22 @@
 (add-to-list 'load-path "~/.emacs.d")
 
-;; You're expected to populate .emacs.d/local.el
-;; with your own code. This file is under .gitignore
-;; so it won't be version-controlled. The idea is to
-;; make this file load other version-controlled files.
-(load "nebirhos")
+;; My configs
+(load "nebirhos/defuns")
+(load "nebirhos/packages")
+(load "nebirhos/global")
+(load "nebirhos/ui")
+(load "nebirhos/files")
+(load "nebirhos/snippets")
+(load "nebirhos/navigation")
+(load "nebirhos/undo")
+(load "nebirhos/speedbar")
+(load "nebirhos/bindings")
+
+;; ;; My modes
+(load "nebirhos/ruby")
+(load "nebirhos/coffee")
+(load "nebirhos/sass")
+(load "nebirhos/slim")
+(load "nebirhos/yaml")
+(load "nebirhos/markdown")
+(load "nebirhos/javascript")

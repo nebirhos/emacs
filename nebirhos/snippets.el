@@ -1,13 +1,11 @@
-(vendor 'yasnippet)
-(yas/global-mode 1)
+(package-install-if-missing 'yasnippet)
+(yas-global-mode)
 
-;; New snippets are stored in the first directory
-(setq yas/root-directory '("~/.emacs.d/nebirhos/snippets"
-                           "~/.emacs.d/vendor/yasnippet/snippets"))
-
-;; Map `yas/load-directory' to every element
-(mapc 'yas/load-directory yas/root-directory)
-
-;; autopair a-la textmate
-(vendor 'autopair)
-(autopair-global-mode) ;; enable autopair in all buffers
+(package-install-if-missing 'smartparens)
+(require 'smartparens-config)
+(require 'smartparens-ruby)
+(smartparens-global-mode)
+(show-smartparens-global-mode t)
+(sp-with-modes '(rhtml-mode)
+	       (sp-local-pair "<" ">")
+	       (sp-local-pair "<%" "%>"))

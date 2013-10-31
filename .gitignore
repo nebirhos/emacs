@@ -1,7 +1,7 @@
-url/*
-.DS_Store
 local.el
 *.elc
-private.el
-auto-save-list
-session.*
+/private.el
+/auto-save-list
+/session.*
+/elpa
+/projectile-bookmarks.eld

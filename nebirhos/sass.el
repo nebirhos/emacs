@@ -1,5 +1,6 @@
-;; haml, sass and scss
-(vendor 'haml-mode)
-(vendor 'sass-mode)
-(add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
-(add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
+;; sass and scss
+(package-install-if-missing 'sass-mode)
+
+(package-install-if-missing 'highlight-indentation)
+(add-hook 'sass-mode-hook
+	  (lambda () (highlight-indentation-mode)))
