@@ -15,6 +15,7 @@
 
 ;; ;; My modes
 (load "nebirhos/ruby")
+(load "nebirhos/rails")
 (load "nebirhos/coffee")
 (load "nebirhos/sass")
 (load "nebirhos/slim")
