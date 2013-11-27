@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: #{string}
-# condition: 'force-in-comment
-# --
-#{$1}
