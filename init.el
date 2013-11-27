@@ -11,6 +11,7 @@
 (load "nebirhos/undo")
 (load "nebirhos/speedbar")
 (load "nebirhos/magit")
+(load "nebirhos/visual-regexp")
 (load "nebirhos/bindings")
 
 ;; ;; My modes
