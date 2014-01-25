@@ -4,6 +4,7 @@
 (load "nebirhos/defuns")
 (load "nebirhos/packages")
 (load "nebirhos/global")
+(load "nebirhos/ido")
 (load "nebirhos/ui")
 (load "nebirhos/files")
 (load "nebirhos/snippets")

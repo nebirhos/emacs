@@ -23,14 +23,6 @@
 (setq replace-regex-history-max 50)
 (setq find-file-history-max 1000)
 
-;; FLX IDO
-(package-install-if-missing 'flx-ido)
-(ido-mode t)
-(ido-everywhere t)
-(flx-ido-mode t)
-;; disable ido faces to see flx highlights.
-(setq ido-use-faces nil)
-
 ;; Browser
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome")
