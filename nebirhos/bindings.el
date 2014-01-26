@@ -35,5 +35,11 @@
 (global-set-key (kbd "S-s-<down>") 'shrink-window)
 (global-set-key (kbd "S-s-<up>") 'enlarge-window)
 
+;; Move Text with SHIFT-ALT-UP/DOWN
+(package-install-if-missing 'move-text)
+(global-set-key [S-M-up] 'move-text-up)
+(global-set-key [S-M-down] 'move-text-down)
+
 ;; Navigate between windows using Alt-left, Alt-up, Alt-right
+;; Must be after move-text bindings
 (windmove-default-keybindings 'meta)
