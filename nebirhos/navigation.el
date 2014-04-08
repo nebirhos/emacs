@@ -1,6 +1,8 @@
 ;; bye-bye Ack
 (package-install-if-missing 'ag)
-(setq ag-reuse-window 't)
+(setq ag-reuse-window nil)
+(setq ag-reuse-buffers t)
+(setq ag-highlight-search t)
 
 ;; ace-jump
 (package-install-if-missing 'ace-jump-mode)
