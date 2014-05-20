@@ -43,3 +43,5 @@
 ;; Navigate between windows using Alt-left, Alt-up, Alt-right
 ;; Must be after move-text bindings
 (windmove-default-keybindings 'meta)
+
+(global-set-key (kbd "<backtab>") 'indent-rigidly)
