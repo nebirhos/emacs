@@ -14,8 +14,9 @@
 (load "nebirhos/magit")
 (load "nebirhos/visual-regexp")
 (load "nebirhos/bindings")
+(load "nebirhos/tab")
 
-;; ;; My modes
+;; My modes
 (load "nebirhos/ruby")
 (load "nebirhos/rails")
 (load "nebirhos/coffee")
