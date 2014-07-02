@@ -11,7 +11,6 @@
 (setq yank-pop-change-selection t)    ; make rotating the kill ring change the X11 clipboard.
 
 
-(global-set-key "\C-L" 'goto-line)
 (global-set-key "\C-xk" 'kill-this-buffer) ; don't ask, just kill
 (global-set-key "\C-x\C-k" 'kill-all-buffers)
 
