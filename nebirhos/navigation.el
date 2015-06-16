@@ -18,10 +18,6 @@
 (global-set-key "\C-x\C-a" 'projectile-ag)
 (global-set-key "\C-x\C-p" 'projectile-switch-project)
 
-;; helm
-(package-install-if-missing 'helm)
-(global-set-key "\C-x\C-b" 'helm-mini)
-
 ;; expand region
 (package-install-if-missing 'expand-region)
 (global-set-key (kbd "C-ò") 'er/expand-region)

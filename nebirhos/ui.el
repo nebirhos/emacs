@@ -75,3 +75,7 @@
 (prelude-frame-config (selected-frame))
 ;; and later
 (add-hook 'after-make-frame-functions 'prelude-frame-config)
+
+;; powerline
+(package-install-if-missing 'powerline)
+(powerline-default-theme)

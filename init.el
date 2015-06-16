@@ -15,6 +15,7 @@
 (load "nebirhos/visual-regexp")
 (load "nebirhos/bindings")
 (load "nebirhos/tab")
+(load "nebirhos/spell")
 
 ;; My modes
 (load "nebirhos/ruby")
@@ -26,3 +27,8 @@
 (load "nebirhos/yaml")
 (load "nebirhos/markdown")
 (load "nebirhos/javascript")
+(load "nebirhos/feature")
+(load "nebirhos/jade")
+(load "nebirhos/jsx")
+
+(setq sgml-basic-offset 4)
