@@ -1,6 +1,7 @@
 ;; Files
-(setq backup-inhibited t)		; No standard backup files
-(setq auto-save-default nil)		; disable auto save
+(setq backup-inhibited t)              ; No standard backup files
+(setq auto-save-default nil)           ; disable auto save
+(setq create-lockfiles nil)            ; disable .#LOCK_FILE
 
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
